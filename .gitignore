@@ -1,0 +1,5 @@
+bin/
+obj/
+.vs/
+Balls.VC.db
+Balls.VC.VC.opendb
