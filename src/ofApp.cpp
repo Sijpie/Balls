@@ -3,7 +3,7 @@
 ofApp::ofApp() :
 	ball1(ofColor::blueSteel, 20),
 	ball2(ofColor::darkBlue, 30),
-	ball3(ofColor::blue, 40)
+	ball3(ofColor(100,210,100), 40)
 
 {
 
@@ -11,6 +11,7 @@ ofApp::ofApp() :
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+	ofBackground(255, 255, 255);
 
 }
 
@@ -27,6 +28,7 @@ void ofApp::draw(){
 	ball1.draw();
 	ball2.draw();
 	ball3.draw();
+		
 }
 
 //--------------------------------------------------------------

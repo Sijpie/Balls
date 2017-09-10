@@ -30,13 +30,23 @@ void Ball::update()
 	}
 
 
-
 //|| or
 
 
 	xpos = xpos + xspeed;
 	ypos = ypos + yspeed;
 
+
+//HUE color
+	float hue = color.getHue();
+	hue = hue + 1;
+
+	if (hue > 255)
+	{
+		hue = 0;
+	}
+
+	color.setHue(hue);
 
 }
 
